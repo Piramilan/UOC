@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Log In</title>
+</head>
+<body>
+<div id="main" class="hero">
+   <div class="form-box">
+       <div class="button-box">
+           <div id="btn"></div>
+            <button type="submit" class="toggle-btn" onclick="admin()">Admin Login</button>
+            <button type="submit" class="toggle-btn" onclick="user()">User Login</button>
+            <button type="submit" class="toggle-btn" onclick="reg()">Registration</button>
+       </div>
+   <div>
+    <div>
+        <form id="admin-login"  class="input-group">
+            <p id="fill-1" class="para">Admin Login</p>
+            <label for="" id="fill-1">User Name</label><br>
+            <input type="text" name="aname" class="input-field"  required><br>
+            <label for="" id="fill-1">Password</label><br>
+            <input type="password" name="pass" class="input-field" required ><br><br>
+            <button type="submit" name="submit" class="submit-btn" id="fill-1">Login Now</button>
+            <p class="para-1">"Libraries will get you through times of no money better than money will get you through times of no libraries."</p>
+        </form>
+    </div>
+    <div>
+        <form id="user-login" class="input-group">
+            <p id="fill-1" class="para">User Login</p>
+            <label for="" id="fill-1">User Name</label><br>
+            <input type="text" name="name" class="input-field" required><br>
+            <label for="" id="fill-1">Password</label><br>
+            <input type="password" name="pass" class="input-field" required><br><br>
+            <button type="submit" name="submit" class="submit-btn" id="fill-1">Login Now</button>
+            <p class="para-1">"The only thing that you absolutely have to know, is the location of the library."</p>
+        </form>
+    </div>
+    <div >
+        <form id="user-signup" class="input-group">
+            <p id="fill-2" class="para">Create Account</p>
+            <label id="fill-2">Name</label><br>
+            <input type="text" name="name" class="input-field" required><br>
+            <label id="fill-2">Password</label><br>
+            <input type="password" name="pass" class="input-field" required><br>
+            <label id="fill-2">E-Mail</label><br>
+            <input type="email" name="mail" class="input-field" required><br>
+            <label id="fill-2">Department</label><br>
+            <select name="dep" class="input-field" id="fill-2" required ><br>
+                <option value="" id="fill-2">Select</option>
+                <option value="Science" id="fill-2">Science</option>
+                <option value="Arts" id="fill-2">Arts</option>
+                <option value="Law" id="fill-2">Law</option>
+                <option value="MGT" id="fill-2">MGT</option>
+        </select><br><br>
+        <button type="submit" name="submit" class="submit-btn" id="fill-2">Register Now</button>
+       </form>
+    </div>
+   </div>
+</div>
+</div>
+<script>
+var x = document.getElementById("admin-login");
+var y = document.getElementById("user-login");
+var z = document.getElementById("user-signup");
+var btn = document.getElementById("btn");
+
+function admin(){
+    x.style.left="72px";
+    y.style.left="850px";
+    z.style.left="850px";
+    btn.style.left="0px";
+}
+function user(){
+   x.style.left="-400px";
+    y.style.left="72px";
+    z.style.left="1130px";
+    btn.style.left="130px";
+}
+function reg(){
+    x.style.left="-950px";
+    y.style.left="-900px";
+    z.style.left="72px";
+    btn.style.left="270px";
+}
+</script>
+</body>
+</html>
